@@ -2,6 +2,8 @@
 body{
     width: 1200px;
     margin: auto;
+    padding-top: 20px;
+ 
 }
 .flex-container{
     display: flex;
@@ -15,8 +17,9 @@ body{
     /*justify-content: space-around;*/
     justify-content: center;
     background-color:#2a3a50;
-    align-items:stretch;
-    align-content: center;
+    /*align-items:stretch;
+    align-content: center;*/
+
 }
 .flex-container_nav{
     display: flex;
@@ -55,7 +58,7 @@ body{
     border: 5px solid black;
     flex-direction: row;
     flex-grow: 10;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -96,18 +99,19 @@ body{
 
 .flex-container_article{
     display: flex;
+    flex-wrap: wrap;
     border: 5px solid black;
     border-right: 12px solid black;
     flex-direction: row;
     flex-grow: 10;
-    flex-flow: row wrap;
-    list-style: none;
     padding: 0;
     margin: 0;
-    justify-content: space-around;
+    align-content: flex-start;
     align-items: flex-start;
     background-color:#464660;
     width:58%;
+
+
 }
 .flex-container_aside{
     display: flex;
@@ -193,31 +197,33 @@ body{
 .flex-item_article_1{
     background: #2263a6;
     padding: 5px;
-    margin:10px;
-    width: 47%;
+    margin:12px;
+    width: 46%;
     height: 10px;
     line-height: 10px;
     color: white;
     font-weight: bold;
     font-size: 3em;
     text-align: center;
+
 }
 .flex-item_article_2{
     background:#699bbc;
     padding: 5px;
     margin:10px;
-    width: 97%;
+    width: 96%;
     height: 10px;
     line-height: 10px;
     color: white;
     font-weight: bold;
     font-size: 3em;
     text-align: center;
+
 }
 .flex-item_aside_1{
     background: #fde780;
     padding: 5px;
-    margin:10px;
+    margin:12px;
     width: 90%;
     height: 10px;
     line-height: 10px;
