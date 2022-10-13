@@ -1,5 +1,8 @@
 /* flex contenedores genéricos *********/
-
+body{
+    width: 1200px;
+    margin: auto;
+}
 .flex-container{
     display: flex;
     border: 12px solid black;
